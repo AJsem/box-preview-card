@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-color: hsl(47, 88%, 63%);
+      --mContainer-color: hsl(0, 0%, 100%);
+      --heading-color: hsl(0, 0%, 7%);
+      --text-color: hsl(0, 0%, 42%) ;
+
+      Yellow:  
+    }
+
+    body {
+      font-family: "Figtree", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      padding: 10px;
+      font-style: normal;
+      min-height: 100vh;
+      min-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      background-color: var(--bg-color);
+
+    }
+
+    .main-container {
+      padding: 20px;
+      background-color: var(--mContainer-color);
+      border: 2px solid var(--heading-color);
+      max-height: 60%;
+      overflow: hidden;
+      border-radius: 15px;
+      max-width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .learn-h4 {
+      background-color: var(--bg-color);
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 70px;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+
+    .image-container {
+      margin-bottom: 25px;
+      background-color: red;
+      overflow: hidden;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: inherit;
+    }
+
+    .attribution { font-size: 11px; text-align: center;
+      margin-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="image-container">
+      <img src="assets/images/illustration-article.svg" alt="background-top" id="bg-image">
+    </div>
+
+    <div class="mini-container">
+      <span class="learn-h4">Learning</span>
+      <p id="publish-date">Published 21 Dec 2023</p>
+      <h2>HTML & CSS foundations</h2>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="img-container">
+        <img src="assets/images/image-avatar.webp" alt="profile img">
+        <p id="name">Greg Hooper</p>
+      </div>
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
