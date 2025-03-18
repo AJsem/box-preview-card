@@ -96,6 +96,16 @@
       margin-bottom: 12px;
     }
 
+    a {
+      text-decoration: none;
+      color: var(--heading-color);
+    }
+
+    h3:hover {
+      color: var(--bg-color);
+      cursor: pointer;
+    }
+
     .mini-container p {
       font-size: 0.84rem;
       font-weight: 800;
@@ -123,7 +133,7 @@
     }
     .attribution { font-size: 11px; text-align: center;
       margin-top: 10px; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: revert; }
   </style>
 </head>
 <body>
@@ -135,7 +145,7 @@
     <div class="mini-container">
       <span class="learn-h4">Learning</span>
       <p id="publish-date">Published 21 Dec 2023</p>
-      <h3>HTML & CSS foundations</h3>
+      <a href="#"><h3>HTML & CSS foundations</h3></a>
       <p id="text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
       <div class="profile-img">
         <img src="assets/images/image-avatar.webp" alt="profile img">
@@ -144,12 +154,10 @@
     </div>
     
   </div>
-
-  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/AJsem" target="_blank">JxGrim</a>
   </div>
 </body>
 </html>
